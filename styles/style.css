@@ -1,0 +1,137 @@
+* {
+    font-family: 'Helevtica Neue', Helvetica, sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 4em 1fr 2em; 
+    gap: 2.25em 2.25em; 
+    grid-template-areas: 
+      "nav"
+      "content"
+      "footer"; 
+    background-color: #f3f3f3;
+}
+
+nav {
+    background-color: transparent;
+}
+
+#nav_items_list {
+    list-style: none;
+    float: right;
+}
+
+.nav_item {
+    margin: 0 2em 0 2em;
+    display: inline;
+    font-size: 1.15em;
+}
+
+.nav_item_link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_item_link:hover {
+    color: red;
+}
+
+.content {
+    margin: 2em 1.8em auto 1.8em;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: 1fr; 
+    gap: 2.25em 2.25em; 
+    grid-template-areas: 
+    "left_container right_container"; 
+}
+
+.left_container {
+    border-radius: 0.76em; 
+    grid-area: left_container;
+    height: 30em;
+}
+
+.right_container { 
+    border: 0.15em solid black;
+    border-radius: 0.76em; 
+    grid-area: right_container; 
+    background-color: aquamarine;
+}
+
+.upper_left_container {
+    background-color: #FDFDFF;
+    border-radius: 2em 2em 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#K-logo {
+    height: 11em;
+    margin: -5em 0 0 0;
+}
+
+#my-name {
+    font-size: 2em;
+    margin: 0.4em 0 0 0;
+}
+
+#my-role {
+}
+
+.lower_left_container {
+    margin-top: -1.3em;
+    background-color: #F3F6F7;
+    border-radius: 0 0 2em 2em;
+}
+
+#bio-list {
+    list-style: none;
+}
+
+#bio-list li {
+    margin: 1.3em 0 0.6em 0;
+}
+
+#bio-list:first-child {
+    margin-top: 3em;
+}
+
+#bio-list li img {
+    height: 1em;
+    margin-right: 0.6em;
+    margin-bottom: -0.1em;
+}
+
+#bio-button img {
+    height: 1em;
+    margin-right: 0.6em;
+    margin-bottom: -0.1em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.4em;
+    background-color: #eeeeee;
+}
+
+footer p {
+    font-size: 0.7em;
+}
+
+
