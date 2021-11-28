@@ -43,6 +43,10 @@ nav {
     color: red;
 }
 
+.nav_item_link:active {
+    text-decoration: underline red solid ;
+}
+
 .content {
     margin: 2em 1.8em auto 1.8em;
     display: grid; 
@@ -141,7 +145,7 @@ nav {
 .right_container {
     border-radius: 0.76em; 
     grid-area: right_container;
-    height: 30em;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -155,8 +159,50 @@ nav {
     box-shadow: 0.5em 0.5em 2em rgba(214, 210, 210, 0.342);
 }
 
-.lower_right_container {
+.upper_right_container h1 {
+    align-self: flex-start;
+    margin: 1em 1em 1em 1em;
+}
 
+.upper_right_container p {
+    margin: 0 2em 2em 2em;
+}
+
+.lower_right_container {
+    background-color: #F3F6F7;
+    border-radius: 0 0 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5em 0.5em 2em rgba(214, 210, 210, 0.342);
+}
+
+.lower_right_container h2 {
+    align-self: flex-start;
+    margin: 1em 1em 1em 1em;
+}
+
+.card-container {
+    background-color: sienna;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+      "first-card second-card"
+      "third-card fourth-card"; 
+}
+
+.card1 {
+    grid-area: first-card;
+    justify-self: stretch;
+    background-color: skyblue;
+}
+
+.card2 {
+    grid-area: second-card;
+    justify-self: stretch;
 }
 
 footer {
