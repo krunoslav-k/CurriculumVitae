@@ -57,15 +57,11 @@ nav {
 .left_container {
     border-radius: 0.76em; 
     grid-area: left_container;
-    height: 30em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.right_container { 
-    border: 0.15em solid black;
-    border-radius: 0.76em; 
-    grid-area: right_container; 
-    background-color: aquamarine;
-}
 
 .upper_left_container {
     background-color: #FDFDFF;
@@ -73,6 +69,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0.5em 0.5em 2em rgba(214, 210, 210, 0.342);
 }
 
 #K-logo {
@@ -86,16 +83,21 @@ nav {
 }
 
 #my-role {
+    margin-bottom: 2em;
 }
 
 .lower_left_container {
-    margin-top: -1.3em;
     background-color: #F3F6F7;
     border-radius: 0 0 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5em 0.5em 2em rgba(214, 210, 210, 0.342);
 }
 
 #bio-list {
     list-style: none;
+    margin-left: -3em;
 }
 
 #bio-list li {
@@ -103,7 +105,7 @@ nav {
 }
 
 #bio-list:first-child {
-    margin-top: 3em;
+    margin-top: 0.5em;
 }
 
 #bio-list li img {
@@ -112,10 +114,49 @@ nav {
     margin-bottom: -0.1em;
 }
 
+#bio-button {
+    height: 2.6em;
+    width: 12em;
+    margin-bottom: 2em;
+    border:none;
+    border-radius: 0.76em;
+    background-color: rgba(130, 176, 219, 0.726);
+    box-shadow: 0.3em 0.3em 1em rgba(176, 180, 184, 0.479);
+    font-size: small;
+    color: black;
+}
+
+#bio-button:active {
+    background-color: rgba(62, 142, 216, 0.767);
+    box-shadow: 0.2em 0.2em 0.85em rgba(176, 180, 184, 0.479);
+}
+
 #bio-button img {
-    height: 1em;
+    height: 2em;
     margin-right: 0.6em;
-    margin-bottom: -0.1em;
+    margin-bottom: -0.4em;
+}
+
+
+.right_container {
+    border-radius: 0.76em; 
+    grid-area: right_container;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper_right_container {
+    background-color: #FDFDFF;
+    border-radius: 2em 2em 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5em 0.5em 2em rgba(214, 210, 210, 0.342);
+}
+
+.lower_right_container {
+
 }
 
 footer {
