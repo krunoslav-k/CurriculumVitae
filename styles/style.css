@@ -194,6 +194,14 @@ nav {
       "third-card fourth-card"; 
 }
 
+.card img {
+    height: 2em;
+}
+
+.card h3 {
+    margin: 1em 3em 0 0;
+}
+
 .card1 {
     grid-area: first-card;
     justify-self: stretch;
