@@ -179,38 +179,63 @@ nav {
 
 .lower_right_container h2 {
     align-self: flex-start;
-    margin: 1em 1em 1em 1em;
+    margin: 1em 1em 0 1em;
 }
 
 .card-container {
-    background-color: sienna;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    background-color: #FDFDFF;
+    border-radius: 1em;
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 1em 1em; 
+    grid-template-columns: 1fr 6fr; 
+    grid-template-rows: 1fr 2fr; 
+    gap: 0 0; 
     grid-template-areas: 
-      "first-card second-card"
-      "third-card fourth-card"; 
+    "icon title"
+    "icon desc"; 
+    width: 45%;
+    height: 8em;
+}
+
+.card:nth-child(1){
+    margin: 2em 2em 0 2em;
+}
+.card:nth-child(2){
+    margin: 2em 2em 0 0;
+}
+
+.card:nth-child(3) {
+    margin: 2em 2em 2em 2em;
+}
+
+.card:nth-child(4) {
+    margin: 2em 2em 2em 0;
 }
 
 .card img {
-    height: 2em;
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+    margin-top: -2em;
+    height: 2.2em;
 }
 
 .card h3 {
-    margin: 1em 3em 0 0;
+    grid-area: title;
+    margin: 1.6em 1em -1em 0;
 }
 
-.card1 {
-    grid-area: first-card;
-    justify-self: stretch;
-    background-color: skyblue;
-}
-
-.card2 {
-    grid-area: second-card;
-    justify-self: stretch;
+.card p {
+    grid-area: desc;
+    margin-right: 1em;
 }
 
 footer {
