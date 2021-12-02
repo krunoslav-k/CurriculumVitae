@@ -238,6 +238,75 @@ nav {
     margin-right: 1em;
 }
 
+.central-container {
+    margin: 0 1.8em auto 1.8em;
+    background-color: #FDFDFF;
+    border-radius: 2em 2em 2em 2em;
+    box-shadow: 0.5em 0.5em 2em rgba(214, 210, 210, 0.342);
+    display: flex;
+    flex-direction: column;
+}
+
+.central-container h1,h2,h3,p {
+    margin-left: 2rem;
+}
+
+.edu-cards-description {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 3fr; 
+    grid-template-rows: 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    "programme degree graduated institution"; 
+}
+
+.edu-cards-description p:nth-child(1){
+    grid-area: programme;
+}
+.edu-cards-description p:nth-child(2){
+    grid-area: degree;
+}
+.edu-cards-description p:nth-child(3){
+    grid-area: graduated;
+}
+.edu-cards-description p:nth-child(4){
+    grid-area: institution;
+}
+
+.edu-card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.edu-card {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 3fr; 
+    grid-template-rows: 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    "programme degree graduated institution"; 
+    background-color: #F3F6F7;
+    border-radius: 1em 1em 1em 1em;
+    margin: 0 2em 2em 2em;
+}
+
+.edu-card p:nth-child(1){
+    grid-area: programme;
+}
+.edu-card p:nth-child(2){
+    grid-area: degree;
+}
+.edu-card p:nth-child(3){
+    grid-area: graduated;
+}
+.edu-institution{
+    grid-area: institution;
+}
+
+
 footer {
     display: flex;
     justify-content: center;
