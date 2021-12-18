@@ -71,7 +71,6 @@ nav img {
     flex-direction: column;
 }
 
-
 .upper_left_container {
     background-color: #FDFDFF;
     border-radius: 2em 2em 0 0;
@@ -315,6 +314,31 @@ nav img {
     grid-area: institution;
 }
 
+/* SKILLS PAGE */
+
+.skills-card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.skills-card {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    "first second"; 
+    background-color: #F3F6F7;
+    border-radius: 1em 1em 1em 1em;
+    margin: 0 2em 2em 2em;
+}
+
+.first-skills-column {
+    grid-area: first;
+}
+
 
 footer {
     display: flex;
@@ -331,5 +355,6 @@ footer {
 footer p {
     font-size: 0.7em;
 }
+
 
 
