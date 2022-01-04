@@ -77,6 +77,7 @@ nav img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     box-shadow: 0.5em 0.5em 2em rgba(214, 210, 210, 0.342);
 }
 
@@ -197,14 +198,7 @@ nav img {
 .card {
     background-color: #FDFDFF;
     border-radius: 1em;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 6fr; 
-    grid-template-rows: 1fr 2fr; 
-    gap: 0 0; 
-    grid-template-areas: 
-    "icon title"
-    "icon desc"; 
+    display: flex;
     width: 45%;
     height: 8em;
 }
@@ -228,18 +222,20 @@ nav img {
     grid-area: icon;
     align-self: center;
     justify-self: center;
-    margin-top: -2em;
+    margin: -1.5rem 0 0 1.2rem;
     height: 2.2em;
 }
 
+.card-text {
+}
+
 .card h3 {
-    grid-area: title;
-    margin: 1.6em 1em -1em 0;
+    margin-top: 1.7rem;
 }
 
 .card p {
-    grid-area: desc;
-    margin-right: 1em;
+    margin-top: -0.7rem;
+    margin-right: 1rem;
 }
 
 .central-container {
@@ -267,6 +263,10 @@ nav img {
     gap: 1em 1em; 
     grid-template-areas: 
     "programme degree graduated institution"; 
+}
+
+.edu-cards-description p {
+    margin-left: 4rem;
 }
 
 .edu-cards-description p:nth-child(1){
@@ -316,29 +316,55 @@ nav img {
 
 /* SKILLS PAGE */
 
-.skills-card-container {
+.skills-card {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.skills-card {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 1em 1em; 
-    grid-template-areas: 
-    "first second"; 
     background-color: #F3F6F7;
     border-radius: 1em 1em 1em 1em;
     margin: 0 2em 2em 2em;
 }
 
-.first-skills-column {
-    grid-area: first;
+.skills-card h3 {
+    margin-top: 2rem;
 }
 
+.skillset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    margin: 0 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skill p {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.4rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.dot-f {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.4rem;
+    background-color: rgb(68, 159, 212);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/* FOOTER */
 
 footer {
     display: flex;
