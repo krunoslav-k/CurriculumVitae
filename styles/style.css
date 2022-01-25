@@ -93,6 +93,7 @@ nav img {
 
 #my-role {
     margin-bottom: 2em;
+    margin-left: -1em;
 }
 
 .lower_left_container {
@@ -362,6 +363,39 @@ nav img {
     border-radius: 50%;
     display: inline-block;
 }
+
+/* PROJECTS PAGE */
+
+.projects-container {
+    margin: 2em 2em 2em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.project {
+    background-color: #F3F6F7;
+    border-radius: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: min-content;
+    margin-right: 2rem;
+}
+
+.project>img {
+    height: 12rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.project>h3 {
+    margin: 1.2rem 0 1.2rem 1.8rem;
+}
+
+.project>p {
+    margin: 0 1.8rem 1.8rem 1.8rem;
+}
+
 
 
 /* CONTACT PAGE */
